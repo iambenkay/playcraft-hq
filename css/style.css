@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix {
+  clear: both;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+nav {
+  z-index: 1;
+  width: 100%;
+  background: #22222266;
+}
+.btn {
+  display: none;
+}
+.navLogo {
+  float: left;
+  margin: 7px 25px;
+}
+.menu {
+  float: right;
+  margin: 6px 15px;
+}
+.menuLogo {
+  display: none;
+}
+.menu .menu-content {
+  margin: 15px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+.menu .menu-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+.menu-content a:last-child{
+	bottom: 90px;
+}
+.menu-icons {
+  display: none;
+}
+.carousel-control-prev {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  top: 48vh;
+  left: 8%;
+  height: 40px;
+  width: 40px;
+  padding: -50px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.carousel-control-prev:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.carousel-control-next {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  top: 48vh;
+  left: 92%;
+  height: 40px;
+  width: 40px;
+  padding: -50px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.carouselImage {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+.footer p {
+  margin: 10px 28px;
+  float: left;
+}
+.footer ul {
+  margin: 10px;
+  float: right;
+}
+.footer ul li {
+  margin: 0px 15px;
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*second menu*/
+
+.menu2 {
+  width: 0;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: rgb(22, 18, 18);
+  top: 0;
+  left: 0;
+  z-index: 50;
+  margin: 0;
+  overflow-y: auto;
+}
+.menuLogo {
+  display: block;
+  margin: 30px auto;
+}
+.menu2 .menu2-content {
+  width: 100%;
+  border-bottom: 1px solid #222;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  list-style-type: none;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu2 .menu2-content a {
+  text-decoration: none;
+  color: white;
+}
+.menu2-content:last-child{
+  margin-bottom: 50px;
+  border-bottom: none;
+}
+.menu2-content:first-child{
+  border-top: 1px solid #222;
+}
+.menu2-content:hover {
+  background-color: #f45e16;
+  color: white;
+}
+.menu2 .menu2-content a {
+  font-size: 15px;
+}
+.menu-down {
+  width: inherit;
+  position: fixed;
+  bottom: 0;
+}
+.menu-below {
+  background-color: #f45e16;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+}
+.menu-icons {
+  display: inline;
+  color: black;
+  margin: 30px;
+  cursor: pointer;
+}
+.close-btn {
+  width: 30px;
+  top: 5px;
+  position: absolute;
+  right: 10px;
+  font-size: 35px;
+}
+.close-btn:hover {
+  color: #f45e16;
+  cursor: pointer;
+}
+
+
+/*About page*/
+.right-col {
+  background-image: url('../images/6.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.paragraph {
+  padding: 100px 40px;
+  color: white;
+  height: inherit;
+}
+.main-container{
+  height: 100vh;
+}
+
+
+
+/*talent*/
+.hero-talent {
+  width: 100%;
+  height: 50% !important;
+}
+.hero-talent img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+.hero-talent h2 {
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 80px;
+  bottom: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  margin: 30px 0px 20px 20px;
+  background-color: #f45e16;
+}
+.card-body {
+  background-color: #f45e16;
+  padding: 10px;
+}
+.card-body a {
+  color: white;
+}
+.card-body a:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+@media only screen and (max-width: 800px) {
+  .collapsible-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+  }
+  .btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    color: white;
+    font-size: 20px;
+  }
+  .btn:hover {
+    color: #f45e16;
+    cursor: pointer;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 0;
+  }
+  .footer {
+    justify-content: center;
+    display: flex;
+  }
+  .footer ul {
+    display: none;
+  }
+  .hero-talent h2 {
+    font-size: 70px;
+  }
+}
